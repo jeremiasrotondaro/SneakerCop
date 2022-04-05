@@ -1,0 +1,1272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+/*Grid layout-----Mobile first-----*/
+.grid__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+header{
+    grid-area: header;
+    
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/*Index----------------------------------------------------------------------------------------*/
+
+header{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   height: auto;
+   width: 100vw;
+   border-bottom: 1px solid black;
+   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+   margin-bottom: 10px;
+}
+.header__logo a img{
+    width: 120px; 
+    transform:scale(1.4);
+}
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header__nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.header__nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    padding: 5px;
+    
+}
+.header__nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-family: 'Permanent Marker', cursive;
+}
+.header__nav ul li a:hover{
+    color: red;
+    text-decoration: overline black 2px solid;
+    opacity: 75%;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+
+
+/*Main-------------------------------------*/
+.main__banner__principal {
+    height: 500px;
+    width: 100vw;
+    background-size: cover;
+    background-image: url(../pics/bannersc-principal.png);
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.main__titulo__produ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.main__titulo__produ h1{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    width: 90vw;
+    margin: 55px 0px 10px 0 ;
+    border-radius: 6px;
+    
+}
+
+
+.main__banner__productos{
+    width: auto;
+    height: 500px;
+    border: 1px solid white;
+    margin: 0 10px 50px 10px;
+
+    background-image: url(./pics/banner-prod-destacados1.png);
+
+    background-size: 100% 100%;
+
+    animation: banner 9s infinite;
+
+}
+
+@keyframes banner { 
+    0%, 30% {
+        background-image: url(../pics/produ1.png)
+    } 
+    35%, 65% {
+        background-image: url(../pics/produ2.png);
+    }
+    70%, 100% {
+        background-image: url(../pics/produ3.png);
+    }
+}
+
+
+.main__banner__productos__2{
+    display: none;
+   
+}
+.main__banner__productos__3{
+    display: none;
+   
+}
+.main__banner__productos__4{
+    display: none;
+   
+}
+.main__banner__productos__5{
+    display: none;
+   
+}
+
+
+.main__section__productos{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr ;
+    gap: 15px;
+    margin: 100px 10px ;
+}
+
+
+.main__section__productos__img a img{
+   width: 100%;
+   height: auto;
+}
+
+.main__section__conocenos{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.main__section__conocenos h2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+.main__section__conocenos p{
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 15px 15px;
+    line-height: 25px;
+}
+.main__section__conocenos a{
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+    background-color: red;
+    width: 200px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 3px;
+    margin-bottom: 100px;
+    margin-top: 15px;
+}
+.main__section__conocenos a:hover{
+    background: linear-gradient(to left, black, gray);
+    transition: 1s;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    transform: scale(1.2);
+    width: 200px;
+}
+
+
+/*Footer-------------------------------*/
+footer{
+    margin-top: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+}
+.footer__preg__compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px 0 ;
+    
+}
+.footer__preg__compra h3{
+    font-size: 25px;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: underline 1px solid black;
+    text-align: center;
+}
+.footer__preg__compra ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+.footer__preg__compra ul li{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.footer__met__pagos{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer__met__pagos h3{
+    font-size: 25px;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: underline 1px solid black;
+}
+.footer__met__pagos img{
+    width: 300px;
+    height: 200px;
+}
+.footer__logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer__logos .footer__logos__sc img{
+    width: 200px;
+}
+.footer__logos__redes ul{
+    display: flex;
+    list-style: none;
+    margin-top: -40px;
+}
+.footer__logos__redes ul li{
+    padding: 5px;
+}
+.footer__logos__redes img{
+    width: 50px;
+}
+.footer__copy p{
+    font-size: 15px;
+    color: black;
+    
+}
+
+/*Productos------------------------------------------------------------------------------------*/
+.main__encabezado{
+    background-image: url(../pics/banner-shop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__encabezado h1{
+    color: white;
+    font-size: 45px;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+.main__encabezado nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__encabezado a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.main__encabezado nav p{
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.main__sec__produ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 10px ;
+}
+.main__sec__produ img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.main__hr__section__drop hr{
+    height: 5px;
+    margin: 10px auto;
+    width: 80vw;
+    background:linear-gradient(to left, black, red);
+}
+.main__sec__drop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 10px ;
+}
+.main__sec__drop figure img{
+    width: 90vw;
+    margin-bottom: 30px;
+}
+.main__sec__drop div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__sec__drop div h2{
+    text-align: center;
+    font-family:  'Permanent Marker', cursive;
+    font-size: 30px;
+}
+.main__sec__drop div p{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 23px;
+}
+.main__sec__drop div a{
+    width: 60vw;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 30px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 8px;
+}
+.main__sec__drop a:hover{
+    transform: scale(0.8);
+    transition: 1s;
+}
+
+/*Marcas-----------------------------------------------*/
+.main__encabezado__marcas{
+    background-image: url(../pics/banner-shop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__encabezado__marcas h1{
+    color: white;
+    font-size: 45px;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+.main__encabezado__marcas nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__encabezado__marcas a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.main__encabezado__marcas nav p{
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.main__banner__marcas__marcas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+}
+.main__banner__marcas__marcas h3{
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 100px 0 25px 0;
+}
+.main__banner__marcas__marcas img{
+    width: 100vw;
+    height: 60px;
+}
+.main__section__marcas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    gap: 10px;
+}
+.main__section__marcas div img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*Nosotros------------------------------------------*/
+.main__encabezado__nosotros{
+    background-image: url(../pics/banner-shop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__encabezado__nosotros h1{
+    color: white;
+    font-size: 45px;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+.main__encabezado__nosotros nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__encabezado__nosotros a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.main__encabezado__nosotros nav p{
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.main__section__since{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto;
+}
+.main__section__since h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 45px;
+    text-align: center;
+}
+.main__section__since p{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 15px;
+    line-height: 25px;
+}
+.main__section__show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main__section__show h2{
+    background-color: black;
+    color: white;
+    width: 80vw;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+    border-radius: 5px;
+}
+.main__section__show div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.main__section__show div img{
+    width: 350px;
+    height: auto;
+}
+.main__section__nosotros__pagos img{
+    display: none;
+    width: 100%;
+    height: 100px;
+}
+.main__section__map{
+    margin: 100px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.main__section__map .map__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    gap: 12px;
+    background: radial-gradient(rgb(68, 68, 68) 5%, black);
+    opacity: 850%;
+    border-radius: 6px;
+}
+.main__section__map .map__info h2{
+    font-size: 45px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    
+}
+.main__section__map .map__info p{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 23px;
+    color: crimson;
+    opacity: 75%;
+    padding: 5px;
+}
+#mapa__local {
+    width: 350px;
+    height: 500px;
+    border: 5px red double;
+    border-radius: 6px;
+}
+#mapa__local iframe{
+    width: 340px;
+    height: 490px;
+}
+
+
+/*Contacto--------------------------------------*/
+#main__contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 50px 10px 150px 10px;
+    gap: 40px;
+}
+.main__contacto__foto img{
+    width: 350px;
+    height: 300px;
+}
+.main__contacto__formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -20px;
+}
+.main__contacto__formulario .main__contacto__pre h1{
+    font-size: 55px;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: underline red 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main__contacto__formulario .main__contacto__pre p{
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+.main__contacto__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main__contacto__info img{
+    margin-top: -12px;
+    width: 40px;
+    height: 40px;
+
+}
+.main__contacto__info p{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.main__contacto__info2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.main__contacto__info2 img{
+    margin-top: -12px;
+    width: 40px;
+    height: 40px;
+}
+.main__contacto__info2 p{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form__completo input{
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 40px;
+    margin-bottom: 25px;
+}
+.form__mensaje textarea{
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    width: 350px;
+    height: 85px;
+    margin-bottom: 25px;
+}
+.form__boton input{
+    width: 350px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 2px 5px black;
+}
+.form__boton input:hover{
+    scale: 0.9;
+    transition: 0.3s;
+}
+
+
+/*Media tablet------------------------------------------------------------------------*/
+@media screen and (min-width: 700px) {
+    /*index------------------------------------*/
+    .header__logo a img{
+        transform:scale(1.5);
+    }
+    .main__titulo__produ h1{
+        font-size: 35px;
+    }
+    .main__banner__productos{
+        display: none;
+    
+    }
+    
+    .main__banner__productos__2{
+        display: flex;
+        width: 100%;
+        height: 300px;
+        border: 3px solid white;
+        margin: 0 0 70px 0;
+    
+        background-image: url(../pics/banner-prod-destacados4.png);
+    
+        background-size: 100% 100%;
+    
+        animation: banner2 9s infinite;
+    
+    }
+    
+    @keyframes banner2 { 
+        0%, 30% {
+            background-image: url(../pics/produ2-1.png)
+        } 
+        35%, 65% {
+            background-image: url(../pics/produ2-2.png);
+        }
+        70%, 100% {
+            background-image: url(../pics/produ2-3.png);
+        }
+    }
+    .main__banner__productos__3{
+        display: flex;
+        width: 100%;
+        height: 300px;
+        border: 3px solid white;
+        margin: 0 0 70px 0;
+    
+        background-image: url(../pics/banner-prod-destacados4.png);
+    
+        background-size: 100% 100%;
+    
+        animation: banner3 10s infinite;
+    
+    }
+    
+    @keyframes banner3 { 
+        0%, 30% {
+            background-image: url(../pics/produ2-4.png)
+        } 
+        35%, 65% {
+            background-image: url(../pics/produ2-5.png);
+        }
+        70%, 100% {
+            background-image: url(../pics/produ2-6.png);
+        }
+    }
+    .main__banner__productos__4{
+        display: none;
+    }
+    .main__banner__productos__5{
+        display: none;
+    }
+
+    .main__section__productos{
+        margin: 100px 80px;
+        gap: 30px;
+    }
+    .main__section__productos__img a img{
+        width: 100%;
+    }
+    .main__section__conocenos h2{
+        font-size: 50px;
+    }
+    .main__section__conocenos p{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .main__section__conocenos a{
+        font-size: 30px;
+    }
+
+
+    /*Footer------------------------------*/
+    .footer__preg__compra h3{
+        font-size: 35px;
+    }
+    .footer__preg__compra ul li{
+        font-size: 25px;
+    }
+    .footer__met__pagos h3{
+        font-size: 35px;
+    }
+    .footer__met__pagos img{
+        width: 500px;
+        height: 250px;
+    }
+    .footer__logos{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+        width: 100vw;
+        margin-top: 20px;
+    }
+    .footer__logos__redes ul{
+        margin-top: 10px;
+    }
+    .footer__copy p{
+        margin-top: 20px;
+        
+    }
+
+
+    /*Productos-----------------------------------------*/
+    .main__sec__drop div h2{
+        font-size: 40px;
+    }
+    .main__sec__drop div p{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .main__sec__drop div a{
+       font-size: 30px;
+       width: 40vw;
+    }
+
+    /*Marcas-----------------------------------------------*/
+    .main__banner__marcas__marcas h3{
+        font-size: 35px;
+    }
+
+    /*Nosotros----------------------------------------------*/
+    .main__section__since h1{
+        font-size: 65px;
+    }
+    .main__section__since p{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .main__section__show h2{
+        font-size: 45px;
+    }
+    .main__section__show div img{
+        width: 500px;
+        height: auto;
+    }
+    .main__section__nosotros__pagos img{
+        display: flex;
+        width: 100vw;
+        height: 100px;
+        margin: 100px 0;
+        border: 2px solid black;
+    }
+    .main__section__map .map__info{
+        width: 400px;
+        height: 450px;
+        gap: 20px;
+    }
+    .main__section__map .map__info h2{
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .main__section__map .map__info p{
+        font-size: 25px;
+        line-height: 28px;
+    }
+    #mapa__local {
+        width: 450px;
+        height: 550px;
+    }
+    #mapa__local iframe{
+        width: 440px;
+        height: 540px;
+    }
+
+
+    /*Contacto-----------------------------------------*/
+    .main__contacto__foto img{
+        width: 550px;
+        height: 450px;
+    }
+    .main__contacto__formulario .main__contacto__pre h1{
+        font-size: 60px;
+    }
+    .main__contacto__formulario .main__contacto__pre p{
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        padding: 0 50px;
+    }
+    .main__contacto__info img{
+        width: 50px;
+        height: 50px;
+    }
+    .main__contacto__info p{
+        font-size: 20px;
+    }
+    .main__contacto__info2 img{
+        width: 50px;
+        height: 50px;
+    }
+    .main__contacto__info2 p{
+        font-size: 20px;
+    }
+    .form__completo input{
+        font-size: 20px;
+        width: 550px;
+        height: 40px;
+    }
+    .form__mensaje textarea{
+        font-size: 17px;
+        width: 550px;
+        height: 85px;
+    }
+    .form__boton input{
+        width: 450px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
+
+/*Media Desktop--------------------------------------------------------------*/
+@media screen and (min-width:1200px) {
+    /*Index------------------------------------------------*/
+    header{
+        justify-content: space-around;
+     }
+
+     .header__logo a img{
+        width: 120px; 
+        transform:scale(1.6);
+    }
+    .header__nav ul li{
+        padding: 15px;
+    }
+    .header__nav ul li a{
+        font-size: 25px;
+    }
+
+
+    .main__banner__principal {
+        height: 700px;
+    }
+    .main__titulo__produ{
+        margin-top: 100px;
+    }
+    .main__titulo__produ h1{
+        font-size: 40px;
+        width: 80vw;
+    }
+    .main__banner__productos{
+        display: none;
+    }
+    .main__banner__productos__2{
+        display: none;
+    }
+    .main__banner__productos__3{
+        display: none;
+    }
+    .main__banner__productos__4{
+        display: flex;
+        width: auto;
+        height: 500px;
+        border: 1px solid white;
+        margin: 0 10px 50px 10px;
+    
+        background-image: url(./pics/banner-prod-destacados1.png);
+    
+        background-size: 100% 100%;
+    
+        animation: banner4 9s infinite;
+    }
+
+    @keyframes banner4 { 
+        0%, 30% {
+            background-image: url(../pics/banner-prod-destacados1.png)
+        } 
+        35%, 65% {
+            background-image: url(../pics/banner-prod-destacados2.png);
+        }
+        70%, 100% {
+            background-image: url(../pics/banner-prod-destacados3.png);
+        }
+    }
+    
+    .main__banner__productos__5{
+        display: flex;
+        width: auto;
+        height: 500px;
+        border: 1px solid white;
+        margin: 0 10px 50px 10px;
+    
+        background-image: url(./pics/banner-prod-destacados1.png);
+    
+        background-size: 100% 100%;
+    
+        animation: banner5 8s infinite;
+    }
+    @keyframes banner5 { 
+        0%, 30% {
+            background-image: url(../pics/banner-prod-destacados4.png)
+        } 
+        35%, 65% {
+            background-image: url(../pics/banner-prod-destacados5.png);
+        }
+        70%, 100% {
+            background-image: url(../pics/banner-prod-destacados6.png);
+        }
+    }
+    .main__section__productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+        gap: 15px;
+        margin: 200px 30px ;
+    }
+    .main__section__conocenos{
+        margin-bottom: 90px;
+    }
+    .main__section__conocenos h2{
+        font-size: 60px;
+    }
+    .main__section__conocenos p{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .main__section__conocenos a{
+        font-size: 35px;
+    }
+    /*Footer------------*/
+    footer{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content:space-evenly;
+        align-items: flex-start;
+        width: 100vw;
+    }
+    .footer__preg__compra h3{
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .footer__logos{
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .footer__logos__redes ul{
+        margin-top: -25px;
+    }
+    .footer__copy {
+        margin-top: 20px;
+        width: 200px;   
+    }
+    .footer__copy p{
+        text-align: center;
+    }
+
+    /*Productos-------------------------------------------*/
+    .main__encabezado h1{
+        font-size: 75px;
+    }
+    .main__sec__produ{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 200px 10px ;
+        gap: 30px;
+    }
+   
+    .main__sec__drop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 60px 20px 150px 20px ;
+        gap: 30px;
+    }
+    .main__sec__drop figure img{
+        width: 50vw;
+        margin-bottom: 30px;
+    }
+    .main__sec__drop div a{
+        width: 20vw;
+    }
+    /*Marcas-------------------------------------------------*/
+    .main__encabezado__marcas h1{
+        font-size: 75px;
+    }
+    .main__banner__marcas__marcas{
+        margin: 100px 0 55px 0;
+    }
+    .main__banner__marcas__marcas h3{
+        font-size: 45px;
+    }
+    .main__banner__marcas__marcas img{
+        width: 95vw;
+        height: auto;
+    }
+    .main__section__marcas{
+        gap: 20px;
+        margin-bottom: 200px;
+    }
+    .main__section__marcas div img{
+        width: 100%;
+        height: auto;
+    }
+    /*Nosotros-----------------------------------------------------------*/
+    .main__encabezado__nosotros h1{
+        font-size: 75px;
+    }
+    .main__section__since h1{
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+    .main__section__since p{
+        font-size: 35px;
+        line-height: 40px;
+        width: 80vw;
+        margin-bottom: 90px;
+    }
+    .main__section__show h2{
+        width: 80%;
+        font-size: 60px;
+    }
+    .main__section__show div{
+        gap: 20px;
+    }
+    .main__section__show div img{
+        width: 450px;
+        height: auto;
+    }
+    .main__section__nosotros__pagos img{
+        width: 70vw;
+        height: 120px;
+        margin: 200px auto;
+    }
+    .main__section__map{
+       gap: 25px;
+       margin-bottom: 200px;
+    }
+
+    #mapa__local{
+        box-shadow: 5px 5px 5px 5px rgba(10, 10, 10, 0.6);
+    }
+
+    /*Contacto--------------------------------------------------------------*/
+    #main__contacto{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 150px 50px;
+    }
+    .main__contacto__foto img{
+        width: 40vw;
+        height: 800px;
+    }
+    .main__contacto__formulario{
+        align-items: flex-start;
+        margin-top: 0;
+    }
+    .main__contacto__formulario .main__contacto__pre h1{
+        text-align: center;
+        font-size: 70px;
+    }
+    .main__contacto__formulario .main__contacto__pre p{
+        text-align: left;
+        font-size: 25px;
+        padding: 0;
+    }
+    .form__completo input{
+        width: 600px;
+    }
+    .form__mensaje textarea{
+        width: 600px;
+        height: 120px;
+    }
+    .form__boton input{
+        width: 600px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
