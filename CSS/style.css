@@ -30,23 +30,22 @@ footer{
 
 /*Index----------------------------------------------------------------------------------------*/
 
-header{
+header nav{
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: space-around;
    align-items: center;
    flex-wrap: wrap;
    height: auto;
-   width: 100vw;
    border-bottom: 1px solid black;
    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
    margin-bottom: 10px;
 }
-.header__logo a img{
+.header__logo img{
     width: 120px; 
     transform:scale(1.4);
-}
-.header__nav{
+}  */
+ .header__nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -85,7 +84,8 @@ header{
 /*Main-------------------------------------*/
 .main__banner__principal {
     height: 500px;
-    width: 100vw;
+    width: 95vw;
+    margin: 0 auto;
     background-size: cover;
     background-image: url(../pics/bannersc-principal.png);
     background-position: center ;
@@ -105,7 +105,7 @@ header{
     font-size: 25px;
     font-family: 'Permanent Marker', cursive;
     text-align: center;
-    width: 90vw;
+    width: 100vw;
     margin: 55px 0px 10px 0 ;
     border-radius: 6px;
     
@@ -116,7 +116,7 @@ header{
     width: auto;
     height: 500px;
     border: 1px solid white;
-    margin: 0 10px 50px 10px;
+    margin: 0 15px 50px 15px;
 
     background-image: url(./pics/banner-prod-destacados1.png);
 
@@ -162,7 +162,7 @@ header{
     grid-template-columns: 1fr ;
     grid-template-rows: 1fr ;
     gap: 15px;
-    margin: 100px 10px ;
+    margin: 100px 0 ;
 }
 
 
@@ -215,8 +215,8 @@ header{
 
 /*Footer-------------------------------*/
 footer{
-    margin-top: 50px;
-    width: 100vw;
+    margin: 50px auto 0 auto;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -996,10 +996,10 @@ footer{
     }
     .main__banner__productos__4{
         display: flex;
-        width: auto;
+        width: 95vw;
         height: 500px;
         border: 1px solid white;
-        margin: 0 10px 50px 10px;
+        margin: 0 auto 50px auto;
     
         background-image: url(./pics/banner-prod-destacados1.png);
     
@@ -1022,10 +1022,10 @@ footer{
     
     .main__banner__productos__5{
         display: flex;
-        width: auto;
+        width: 95vw;
         height: 500px;
         border: 1px solid white;
-        margin: 0 10px 50px 10px;
+        margin: 0 auto 50px auto;
     
         background-image: url(./pics/banner-prod-destacados1.png);
     
