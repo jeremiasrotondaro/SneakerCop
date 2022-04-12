@@ -29,63 +29,39 @@ footer{
 }
 
 /*Index----------------------------------------------------------------------------------------*/
+.container-fluid.nav-centrar{
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    box-shadow: 5px 0 10px  rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.918);
+}
 
-header nav{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
-   flex-wrap: wrap;
-   height: auto;
-   border-bottom: 1px solid black;
-   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
-   margin-bottom: 10px;
+.navbar-brand img{
+    width: 120px;
+    transform: scale(1.5);
 }
-.header__logo img{
-    width: 120px; 
-    transform:scale(1.4);
-}  */
- .header__nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.navbar-toggler{
+    border: 5px solid;
 }
-.header__nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-}
-.header__nav ul li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 5px;
-    padding: 5px;
-    
-}
-.header__nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 23px;
+.collapse.navbar-collapse.nav-fuentes ul li a{
+    font-size: 25px;
     font-family: 'Permanent Marker', cursive;
+    color: black;
 }
-.header__nav ul li a:hover{
-    color: red;
+.collapse.navbar-collapse.nav-fuentes ul li a:hover{
+    color: red ;
     text-decoration: overline black 2px solid;
     opacity: 75%;
     border-radius: 50%;
     transition: 0.5s;
-
 }
 
 
 /*Main-------------------------------------*/
 .main__banner__principal {
-    height: 500px;
+    height: 450px;
     width: 95vw;
-    margin: 0 auto;
+    margin: 25px auto 50px auto;
     background-size: cover;
     background-image: url(../pics/bannersc-principal.png);
     background-position: center ;
@@ -114,9 +90,9 @@ header nav{
 
 .main__banner__productos{
     width: auto;
-    height: 500px;
+    height: 350px;
     border: 1px solid white;
-    margin: 0 15px 50px 15px;
+    margin: 0 15px 100px 15px;
 
     background-image: url(./pics/banner-prod-destacados1.png);
 
@@ -154,6 +130,9 @@ header nav{
 .main__banner__productos__5{
     display: none;
    
+}
+.carousel-item img{
+    height: 350px;
 }
 
 
@@ -728,8 +707,16 @@ footer{
 /*Media tablet------------------------------------------------------------------------*/
 @media screen and (min-width: 700px) {
     /*index------------------------------------*/
-    .header__logo a img{
-        transform:scale(1.5);
+    .container-fluid.nav-centrar{
+        justify-content: space-around;
+        
+    }
+    .navbar-brand img{
+        width: 150px;
+        transform: scale(1.5);
+    }
+    .navbar-toggler{
+        border: 3px solid;
     }
     .main__titulo__produ h1{
         font-size: 35px;
@@ -737,7 +724,7 @@ footer{
     .main__banner__productos{
         display: none;
     
-    }
+    } 
     
     .main__banner__productos__2{
         display: flex;
@@ -960,21 +947,8 @@ footer{
 @media screen and (min-width:1200px) {
     /*Index------------------------------------------------*/
     header{
-        justify-content: space-around;
-     }
-
-     .header__logo a img{
-        width: 120px; 
-        transform:scale(1.6);
+        height: auto;
     }
-    .header__nav ul li{
-        padding: 15px;
-    }
-    .header__nav ul li a{
-        font-size: 25px;
-    }
-
-
     .main__banner__principal {
         height: 700px;
     }
