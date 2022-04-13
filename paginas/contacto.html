@@ -5,26 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="shortcut icon" href="../pics/logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./pics/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body>
+<body class="grid__container">
     <header>
-        <div class="header__logo"> 
-            <a href="../index.html"><img src="../pics/logoo-removebg-preview.png" alt="logo"></a>
-         </div>
-        <nav class="header__nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/productos.html">Productos</a></li>
-                <li><a href="../paginas/marcas.html">Marcas</a></li>
-                <li><a href="../paginas/nosotros.html">Nosotros</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container-fluid nav-centrar">
+            <a class="navbar-brand" href="../index.html"><img src="../pics/logoo-removebg-preview.png" alt="logo marca"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../paginas/productos.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Marcas
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="../paginas/marcas.html">Todas</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="#">Jordan</a></li>
+                    <li><a class="dropdown-item" href="./nike.html">Nike</a></li>
+                    <li><a class="dropdown-item" href="#">Adidas</a></li>
+                    <li><a class="dropdown-item" href="#">Puma</a></li>
+                    <li><a class="dropdown-item" href="#">Fila</a></li>
+                    <li><a class="dropdown-item" href="#">Reebok</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../paginas/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../paginas/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
     </header>
+  
+
 
     <main id="main__contacto">
 
@@ -48,27 +81,21 @@
                 <img src="../pics/mail.png" alt="">
                 <p>Sneakercop.2010@gmail.com</p>
             </div>
-            
-            
 
-
+            
             <div class="form__completo form__nombre">
-                <label for="nombre"></label>
-                <input type="text" id="nombre" placeholder="Nombre">
+                <label for="nombre"></label><input type="text" id="nombre" placeholder="Nombre">
             </div>
 
             <div class="form__completo form__mail">
-                <label for="mail"></label>
-                <input type="email" id="mail" placeholder="Ejemplo@gmail.com" required>
+                <label for="mail"></label><input type="email" id="mail" placeholder="Ejemplo@gmail.com" required>
             </div>
 
             <div class="form__completo form__asunto">
-                <label for="asunto"></label>
-                <input type="text" id="asunto" placeholder="Asunto" >
+                <label for="asunto"></label><input type="text" id="asunto" placeholder="Asunto" >
             </div>
             <div class="form__completo form__mensaje">
-                <label for="mensaje"></label>
-                <textarea name="multi" id="mensaje" placeholder="Mensaje" cols="30" rows="5"></textarea>
+                <label for="mensaje"></label><textarea name="multi" id="mensaje" placeholder="Mensaje" cols="30" rows="5"></textarea>
             </div>
             <div class="form__boton">
                 <input type="submit" value="ENVIAR MENSAJE">
@@ -111,10 +138,10 @@
         <div class="footer__preg__compra">
             <h3>¿Porque comprar en SneakerCop?</h3>
             <ul>
-                <li>Variedad de productos exclusivos</li>
                 <li>Envíos a todo el país</li>
                 <li>Sitio seguro</li>
                 <li>Garantia de calidad</li>
+                <li>Variedad de productos</li>
             </ul>
  
         </div>
@@ -143,5 +170,10 @@
  
          </div>
     </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-</html>
+</html> 

@@ -4,34 +4,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <!--- <link rel="stylesheet" href="./CSS/style.css"> --->
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="shortcut icon" href="./pics/logo.ico">
+    <title>Nike</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../pics/logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body class="grid__container">
-
     <header>
-            <div class="header__logo"> 
-                <a href="./index.html"><img src="./pics/logoo-removebg-preview.png" alt="logo"></a>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container-fluid nav-centrar">
+            <a class="navbar-brand" href="../index.html"><img src="../pics/logoo-removebg-preview.png" alt="logo marca"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../paginas/productos.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Marcas
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="../paginas/marcas.html">Todas</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="#">Jordan</a></li>
+                    <li><a class="dropdown-item" href="./nike.html">Nike</a></li>
+                    <li><a class="dropdown-item" href="#">Adidas</a></li>
+                    <li><a class="dropdown-item" href="#">Puma</a></li>
+                    <li><a class="dropdown-item" href="#">Fila</a></li>
+                    <li><a class="dropdown-item" href="#">Reebok</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../paginas/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../paginas/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div id="carouselNike" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselNike" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselNike" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselNike" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner nike">
+              <div class="carousel-item nike active">
+                <img src="../pics/pag-nike/caro-nike1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item nike">
+                <img src="../pics/pag-nike/caro-nike2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item nike">
+                <img src="../pics/pag-nike/caro-nike3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNike" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselNike" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 shop-items-nike">
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-nike/nike-item1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Air Max Patta</h5>
+                  <p class="card-text">Nike Air Max 1 Patta Waves Noise Aqua (without Bracelet)</p>
+                    <div class="selec__talle__nike">
+                        <select name="numero-calzado" id="numero-calzado">
+                            <option value="1">41</option>
+                            <option value="2">41.5</option>
+                            <option value="3">42</option>
+                            <option value="4" selected>44</option>
+                        </select>
+                        <button class="btn btn-dark" type="submit">Agregar al carrito</button>
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-nike/nike-item2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lakers Jacket</h5>
+                  <p class="card-text">
+                    Nike x Ambush NBA Collection Lakers Jacket White/Purple/Gold</p>
+                  <div class="selec__talle__nike">
+                    <select name="numero-calzado" id="numero-calzado">
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3" disabled>L</option>
+                        <option value="4" selected>XL</option>
+                    </select>
+                    <button class="btn btn-dark" type="submit">Agregar al carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-nike/nike-item3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Portland Icon Shorts</h5>
+                  <p class="card-text">Portland Trail Blazers Icon Edition Shorts Nike NBA</p>
+                  <div class="selec__talle__nike">
+                    <select name="numero-calzado" id="numero-calzado">
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="4">XL</option>
+                    </select>
+                    <button class="btn btn-dark" type="submit">Agregar al carrito</button>
+                </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-nike/nike-item4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dunk Low Gym Red </h5>
+                  <p class="card-text">Nike Dunk Low Next Nature White Gym Red (W)</p>
+                  <div class="selec__talle__nike">
+                    <select name="numero-calzado" id="numero-calzado">
+                        <option value="1">41</option>
+                        <option value="2">41.5</option>
+                        <option value="3">42</option>
+                        <option value="4" selected>44</option>
+                    </select>
+                    <button class="btn btn-dark" type="submit">Agregar al carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-nike/nike-item5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dunk Low 75th Brooklyn Nets</h5>
+                  <p class="card-text">Nike Dunk Low EMB NBA 75th Anniversary Brooklyn Nets</p>
+                  <div class="selec__talle__nike">
+                    <select name="numero-calzado" id="numero-calzado">
+                        <option value="1">41</option>
+                        <option value="2">41.5</option>
+                        <option value="3">42</option>
+                        <option value="4" selected>44</option>
+                    </select>
+                    <button class="btn btn-dark" type="submit">Agregar al carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-nike/nike-item6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">T-shirt DNA Futura</h5>
+                  <p class="card-text">T-shirt Nike NSW Tee DNA Futura</p>
+                  <div class="selec__talle__nike">
+                    <select name="numero-calzado" id="numero-calzado">
+                        <option value="1" disabled>S</option>
+                        <option value="2">M</option>
+                        <option value="3" disabled>L</option>
+                        <option value="4" disabled>XL</option>
+                    </select>
+                    <button class="btn btn-dark" type="submit">Agregar al carrito</button>
+                </div>
+                </div>
+              </div>
             </div>
             
-            
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./paginas/productos.html">Productos</a></li>
-                    <li><a href="./paginas/marcas.html">Marcas</a></li>
-                    <li><a href="./paginas/nosotros.html">Nosotros</a></li>
-                    <li><a href="./paginas/contacto.html">Contacto</a></li>
-                </ul>
-              
-            </nav>
-    </header>
+        </div>
+
+
+
+
+
+
+
+
+
+    </main>
+
     
    
 
@@ -39,29 +220,29 @@
        <div class="footer__preg__compra">
            <h3>¿Porque comprar en SneakerCop?</h3>
            <ul>
-               <li>Variedad de productos exclusivos</li>
                <li>Envíos a todo el país</li>
                <li>Sitio seguro</li>
                <li>Garantía de calidad</li>
+               <li>Variedad de productos</li>
            </ul>
        </div>
 
        <div class="footer__met__pagos">
            <h3>Metodos de pago</h3><!---metodos pago-->
-           <img src="./pics/metodos-de-pago.png" alt="pagos">
+           <img src="../pics/metodos-de-pago.png" alt="pagos">
         </div>
 
         <div class="footer__logos"><!--link redes-->
             <div class="footer__logos__sc"> 
-                <img  src="./pics/logoo-removebg-preview.png" alt=""><!---logo--> 
+                <img  src="../pics/logoo-removebg-preview.png" alt=""><!---logo--> 
             </div>    
             
             <div class="footer__logos__redes">
                 <ul>
-                    <li><a href="#"><img src="./pics/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="./pics/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="./pics/twitetr.png" alt="twitter"></a></li>
-                    <li><a href="#"><img src="./pics/youtube.png" alt="Youtube"></a></li>
+                    <li><a href="#"><img src="../pics/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="../pics/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../pics/twitetr.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="../pics/youtube.png" alt="Youtube"></a></li>
                     
                 </ul>
             </div>
@@ -72,5 +253,10 @@
             
         </div>
    </footer>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

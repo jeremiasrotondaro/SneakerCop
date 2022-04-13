@@ -29,13 +29,16 @@ footer{
 }
 
 /*Index----------------------------------------------------------------------------------------*/
+.navbar{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+}
 .container-fluid.nav-centrar{
     justify-content: space-around;
     border-bottom: 1px solid black;
     box-shadow: 5px 0 10px  rgba(0, 0, 0, 0.6);
     background-color: rgba(255, 255, 255, 0.918);
 }
-
 .navbar-brand img{
     width: 120px;
     transform: scale(1.5);
@@ -43,13 +46,10 @@ footer{
 .navbar-toggler{
     border: 5px solid;
 }
-.collapse.navbar-collapse.nav-fuentes ul li a{
-    font-size: 25px;
-    font-family: 'Permanent Marker', cursive;
-    color: black;
+.collapse.navbar-collapse ul li ul li{
+    font-size: 20px;
 }
-.collapse.navbar-collapse.nav-fuentes ul li a:hover{
-    color: red ;
+.collapse.navbar-collapse ul li a:hover{
     text-decoration: overline black 2px solid;
     opacity: 75%;
     border-radius: 50%;
@@ -86,7 +86,6 @@ footer{
     border-radius: 6px;
     
 }
-
 
 .main__banner__productos{
     width: auto;
@@ -309,7 +308,7 @@ footer{
     color: white;
     font-size: 17px;
     font-family: sans-serif;
-    margin-top: 10px;
+    margin-top: 25px;
     padding-left: 10px;
 }
 
@@ -415,7 +414,7 @@ footer{
     color: white;
     font-size: 17px;
     font-family: sans-serif;
-    margin-top: 10px;
+    margin-top: 25px;
     padding-left: 10px;
 }
 .main__banner__marcas__marcas{
@@ -428,8 +427,8 @@ footer{
 .main__banner__marcas__marcas h3{
     font-size: 30px;
     text-align: center;
-    font-family: sans-serif;
-    margin: 100px 0 25px 0;
+    font-family: 'Permanent Marker', cursive;
+    margin: 50px 0 25px 0;
 }
 .main__banner__marcas__marcas img{
     width: 100vw;
@@ -488,7 +487,7 @@ footer{
     color: white;
     font-size: 17px;
     font-family: sans-serif;
-    margin-top: 10px;
+    margin-top: 25px;
     padding-left: 10px;
 }
 .main__section__since{
@@ -597,16 +596,17 @@ footer{
 /*Contacto--------------------------------------*/
 #main__contacto{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    margin: 50px 10px 150px 10px;
+    margin: 50px 0 150px 0;
     gap: 40px;
+    width: 100vw;
 }
 .main__contacto__foto img{
     width: 350px;
-    height: 300px;
+    height: 350px;
 }
 .main__contacto__formulario{
     display: flex;
@@ -709,15 +709,19 @@ footer{
     /*index------------------------------------*/
     .container-fluid.nav-centrar{
         justify-content: space-around;
-        
+        align-items: center;
     }
     .navbar-brand img{
         width: 150px;
-        transform: scale(1.5);
+        transform: scale(1.6);
     }
     .navbar-toggler{
-        border: 3px solid;
+        border: 5px solid;
     }
+    .collapse.navbar-collapse.nav-fuentes ul li a{
+        font-size: 30px;
+    }
+
     .main__titulo__produ h1{
         font-size: 35px;
     }
@@ -757,7 +761,7 @@ footer{
         width: 100%;
         height: 300px;
         border: 3px solid white;
-        margin: 0 0 70px 0;
+        margin: 0 0 100px 0;
     
         background-image: url(../pics/banner-prod-destacados4.png);
     
@@ -786,7 +790,7 @@ footer{
     }
 
     .main__section__productos{
-        margin: 100px 80px;
+        margin: 150px 80px;
         gap: 30px;
     }
     .main__section__productos__img a img{
@@ -802,6 +806,23 @@ footer{
     .main__section__conocenos a{
         font-size: 30px;
     }
+    .carousel-item img{
+        height: auto;
+    }
+    .carousel-caption h5{
+        font-size: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 25vw;
+        margin: 10px auto;
+    }
+    .carousel-caption p{
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+
 
 
     /*Footer------------------------------*/
@@ -946,8 +967,21 @@ footer{
 /*Media Desktop--------------------------------------------------------------*/
 @media screen and (min-width:1200px) {
     /*Index------------------------------------------------*/
-    header{
-        height: auto;
+    .navbar{
+        font-size: 25px;
+    }
+    .navbar-brand img{
+        width: 110px;
+        transform: scale(1.6);
+    }
+    .collapse.navbar-collapse{
+        justify-content: flex-end;
+    }
+    .collapse.navbar-collapse ul li{
+        margin:0 10px;
+    }
+    .collapse.navbar-collapse ul li ul li a{
+        font-size: 20px;
     }
     .main__banner__principal {
         height: 700px;
@@ -1018,6 +1052,12 @@ footer{
             background-image: url(../pics/banner-prod-destacados6.png);
         }
     }
+    #carouselNews{
+        margin: 100px 50px ;
+    }
+    .carousel-item img{
+        height: 600px;
+    }
     .main__section__productos{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1080,6 +1120,11 @@ footer{
         margin: 200px 10px ;
         gap: 30px;
     }
+    .main__sec__produ img{
+        width: 500px;
+        height: auto;
+        margin-bottom: 20px;
+    }
    
     .main__sec__drop{
         display: flex;
@@ -1115,7 +1160,7 @@ footer{
         margin-bottom: 200px;
     }
     .main__section__marcas div img{
-        width: 100%;
+        width: 550px;
         height: auto;
     }
     /*Nosotros-----------------------------------------------------------*/
@@ -1144,13 +1189,19 @@ footer{
         height: auto;
     }
     .main__section__nosotros__pagos img{
-        width: 70vw;
+        width: 80vw;
         height: 120px;
         margin: 200px auto;
     }
     .main__section__map{
        gap: 25px;
        margin-bottom: 200px;
+       background-image: url(../pics/ciudad.jpg);
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       filter: saturate(80%);
+       height: 800px;
     }
 
     #mapa__local{
@@ -1191,55 +1242,29 @@ footer{
         width: 600px;
     }
 
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+/*Pag-Nike-----------------------------------------------------------------------------------------------------*/
+#carouselNike{
+    margin: 50px 10px;
+}
+.carousel-item.nike img{
+    height: 400px;
+}
+.shop-items-nike{
+    margin: 100px 10px;
+}
+    
+    
 
 
 
