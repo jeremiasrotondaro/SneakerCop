@@ -60,7 +60,7 @@ footer{
 /*Main-------------------------------------*/
 .main__banner__principal {
     height: 450px;
-    width: 95vw;
+    width: 95%;
     margin: 25px auto 50px auto;
     background-size: cover;
     background-image: url(../pics/bannersc-principal.png);
@@ -81,7 +81,7 @@ footer{
     font-size: 25px;
     font-family: 'Permanent Marker', cursive;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     margin: 55px 0px 10px 0 ;
     border-radius: 6px;
     
@@ -140,7 +140,7 @@ footer{
     grid-template-columns: 1fr ;
     grid-template-rows: 1fr ;
     gap: 15px;
-    margin: 100px 0 ;
+    margin: 100px 10px ;
 }
 
 
@@ -150,7 +150,7 @@ footer{
 }
 
 .main__section__conocenos{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -194,7 +194,7 @@ footer{
 /*Footer-------------------------------*/
 footer{
     margin: 50px auto 0 auto;
-    width: 95vw;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -276,7 +276,7 @@ footer{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -327,7 +327,7 @@ footer{
 .main__hr__section__drop hr{
     height: 5px;
     margin: 10px auto;
-    width: 80vw;
+    width: 80%;
     background:linear-gradient(to left, black, red);
 }
 .main__sec__drop{
@@ -338,7 +338,7 @@ footer{
     margin: 60px 10px ;
 }
 .main__sec__drop figure img{
-    width: 90vw;
+    width: 100%;
     margin-bottom: 30px;
 }
 .main__sec__drop div{
@@ -360,7 +360,7 @@ footer{
     line-height: 23px;
 }
 .main__sec__drop div a{
-    width: 60vw;
+    width: 60%;
     height: auto;
     text-align: center;
     font-size: 25px;
@@ -382,7 +382,7 @@ footer{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -431,7 +431,7 @@ footer{
     margin: 50px 0 25px 0;
 }
 .main__banner__marcas__marcas img{
-    width: 100vw;
+    width: 100%;
     height: 60px;
 }
 .main__section__marcas{
@@ -455,7 +455,7 @@ footer{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -519,7 +519,7 @@ footer{
 .main__section__show h2{
     background-color: black;
     color: white;
-    width: 80vw;
+    width: 80%;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     font-size: 35px;
@@ -602,7 +602,7 @@ footer{
     flex-wrap: wrap;
     margin: 50px 0 150px 0;
     gap: 40px;
-    width: 100vw;
+    width: 100%;
 }
 .main__contacto__foto img{
     width: 350px;
@@ -818,9 +818,19 @@ footer{
     .carousel-caption p{
         font-size: 20px;
         background-color: rgba(0, 0, 0, 0.6);
-        width: 50vw;
+        width: 30vw;
         margin: 0 auto;
     }
+    .main__section__productos{
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 1fr;
+        gap: 40px;
+        margin: 100px 0 ;
+        align-items: center;
+        justify-content: center;
+    }
+    
 
 
 
@@ -844,7 +854,7 @@ footer{
         flex-direction: row;
         justify-content:space-evenly;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         margin-top: 20px;
     }
     .footer__logos__redes ul{
@@ -857,6 +867,11 @@ footer{
 
 
     /*Productos-----------------------------------------*/
+
+    .main__sec__drop figure img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
     .main__sec__drop div h2{
         font-size: 40px;
     }
@@ -922,7 +937,7 @@ footer{
     /*Contacto-----------------------------------------*/
     .main__contacto__foto img{
         width: 550px;
-        height: 450px;
+        height: 500px;
     }
     .main__contacto__formulario .main__contacto__pre h1{
         font-size: 60px;
@@ -991,7 +1006,7 @@ footer{
     }
     .main__titulo__produ h1{
         font-size: 40px;
-        width: 80vw;
+        width: 80%;
     }
     .main__banner__productos{
         display: none;
@@ -1004,7 +1019,7 @@ footer{
     }
     .main__banner__productos__4{
         display: flex;
-        width: 95vw;
+        width: 95%;
         height: 500px;
         border: 1px solid white;
         margin: 0 auto 50px auto;
@@ -1030,7 +1045,7 @@ footer{
     
     .main__banner__productos__5{
         display: flex;
-        width: 95vw;
+        width: 95%;
         height: 500px;
         border: 1px solid white;
         margin: 0 auto 50px auto;
@@ -1053,20 +1068,28 @@ footer{
         }
     }
     #carouselNews{
-        margin: 100px 50px ;
+        margin: 150px 60px ;
     }
     .carousel-item img{
-        height: 600px;
+        height: 500px;
     }
     .main__section__productos{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr ;
-        gap: 15px;
-        margin: 200px 30px ;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 1fr;
+        gap: 40px;
+        margin: 100px 0 ;
+        align-items: center;
+        justify-content: center;
     }
+    
+    .main__section__productos__img a img{
+       width: 100%;
+       height: auto;
+    }
+
     .main__section__conocenos{
-        margin-bottom: 90px;
+        margin: 200px 0 90px 0;
     }
     .main__section__conocenos h2{
         font-size: 60px;
@@ -1084,7 +1107,7 @@ footer{
         flex-wrap: nowrap;
         justify-content:space-evenly;
         align-items: flex-start;
-        width: 100vw;
+        width: 100%;
     }
     .footer__preg__compra h3{
         text-align: left;
@@ -1212,14 +1235,16 @@ footer{
     #main__contacto{
         flex-wrap: nowrap;
         flex-direction: row;
-        margin: 150px 50px;
+        margin: 50px 0px;
+        padding: 0 30px;
     }
     .main__contacto__foto img{
-        width: 40vw;
+        width: 100%;
         height: 800px;
     }
     .main__contacto__formulario{
         align-items: flex-start;
+        justify-content: center;
         margin-top: 0;
     }
     .main__contacto__formulario .main__contacto__pre h1{
@@ -1263,6 +1288,21 @@ footer{
 .shop-items-nike{
     margin: 100px 10px;
 }
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-body p{
+    text-align: center;
+}
+.selec__talle__nike{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
     
     
 
