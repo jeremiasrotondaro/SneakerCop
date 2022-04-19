@@ -1,0 +1,342 @@
+/*Index----------------------------------------------------------------------------------------*/
+.navbar {
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+}
+
+.navbar .container-fluid.nav-centrar {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.918);
+}
+
+.navbar .container-fluid.nav-centrar .navbar-brand img {
+  width: 120px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.navbar .container-fluid.nav-centrar .navbar-toggler {
+  border: 5px solid;
+}
+
+.navbar .container-fluid.nav-centrar .collapse.navbar-collapse ul li ul li {
+  font-size: 20px;
+}
+
+.navbar .container-fluid.nav-centrar .collapse.navbar-collapse ul li a:hover {
+  -webkit-text-decoration: overline black 2px solid;
+          text-decoration: overline black 2px solid;
+  opacity: 75%;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: red;
+}
+
+/*Main-------------------------------------*/
+.main__banner__principal {
+  height: 450px;
+  width: 95%;
+  margin: 25px auto 50px auto;
+  background-size: cover;
+  background-image: url(../pics/bannersc-principal.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main__titulo__produ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.main__titulo__produ h1 {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  width: 100%;
+  margin: 55px 0px 10px 0;
+  border-radius: 6px;
+}
+
+.main__banner__productos {
+  width: auto;
+  height: 350px;
+  border: 1px solid white;
+  margin: 0 15px 100px 15px;
+  background-image: url(./pics/banner-prod-destacados1.png);
+  background-size: 100% 100%;
+  -webkit-animation: banner 9s infinite;
+          animation: banner 9s infinite;
+}
+
+@-webkit-keyframes banner {
+  0%, 30% {
+    background-image: url(../pics/produ1.png);
+  }
+  35%, 65% {
+    background-image: url(../pics/produ2.png);
+  }
+  70%, 100% {
+    background-image: url(../pics/produ3.png);
+  }
+}
+
+@keyframes banner {
+  0%, 30% {
+    background-image: url(../pics/produ1.png);
+  }
+  35%, 65% {
+    background-image: url(../pics/produ2.png);
+  }
+  70%, 100% {
+    background-image: url(../pics/produ3.png);
+  }
+}
+
+.main__banner__productos__2 {
+  display: none;
+}
+
+.main__banner__productos__3 {
+  display: none;
+}
+
+.main__banner__productos__4 {
+  display: none;
+}
+
+.main__banner__productos__5 {
+  display: none;
+}
+
+.carousel-item img {
+  height: 350px;
+}
+
+.main__section__productos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 15px;
+  margin: 100px 10px;
+}
+
+.main__section__productos .main__section__productos__img a img {
+  width: 100%;
+  height: auto;
+}
+
+.main__section__conocenos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__section__conocenos h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+.main__section__conocenos p {
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 15px 15px;
+  line-height: 25px;
+}
+
+.main__section__conocenos a {
+  text-decoration: none;
+  font-size: 23px;
+  color: white;
+  background-color: red;
+  width: 200px;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  border-radius: 3px;
+  margin-bottom: 100px;
+  margin-top: 15px;
+}
+
+.main__section__conocenos a a:hover {
+  background: -webkit-gradient(linear, right top, left top, from(black), to(gray));
+  background: linear-gradient(to left, black, gray);
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  width: 200px;
+}
+
+/*Footer-------------------------------------------------------------*/
+footer {
+  margin: 50px auto 0 auto;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid black;
+}
+
+footer .footer__preg__compra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0 50px 0;
+}
+
+footer .footer__preg__compra h3 {
+  font-size: 25px;
+  font-family: 'Permanent Marker', cursive;
+  -webkit-text-decoration: underline 1px solid black;
+          text-decoration: underline 1px solid black;
+  text-align: center;
+}
+
+footer .footer__preg__compra ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 5px;
+}
+
+footer .footer__preg__compra ul li {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+footer .footer__met__pagos {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__met__pagos h3 {
+  font-size: 25px;
+  font-family: 'Permanent Marker', cursive;
+  -webkit-text-decoration: underline 1px solid black;
+          text-decoration: underline 1px solid black;
+}
+
+footer .footer__met__pagos img {
+  width: 300px;
+  height: 200px;
+}
+
+footer .footer__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+footer .footer__logos .footer__logos__sc img {
+  width: 200px;
+}
+
+footer .footer__logos .footer__logos__redes ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-top: -40px;
+  margin-left: -35px;
+}
+
+footer .footer__logos .footer__logos__redes ul li {
+  padding: 5px;
+}
+
+footer .footer__logos .footer__logos__redes ul img {
+  width: 50px;
+}
+
+footer .footer__logos .footer__copy p {
+  font-size: 15px;
+  color: black;
+}
