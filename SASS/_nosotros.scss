@@ -1,0 +1,255 @@
+/*Nosotros------------------------------------------*/
+.main__encabezado__nosotros{
+    background-image: url(../pics/banner-shop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: white;
+        font-size: 45px;
+        font-family: sans-serif;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 17px;
+            text-align: center;
+            margin-top: 10px;
+            padding-left: 10px;
+        }
+        p{
+            color: white;
+            font-size: 17px;
+            font-family: sans-serif;
+            margin-top: 25px;
+            padding-left: 10px;
+        }
+    }
+}
+
+
+.main__section__since{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto;
+    h1{
+        font-family: $fontPrincipal;
+        font-size: 45px;
+        text-align: center;
+    }
+    p{
+        font-family: sans-serif;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 15px;
+        line-height: 25px;
+    }
+}
+
+.main__section__show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    h2{
+        background-color: black;
+        color: white;
+        width: 80%;
+        text-align: center;
+        font-family: $fontPrincipal;
+        font-size: 35px;
+        border-radius: 5px;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        img{
+            width: 350px;
+            height: auto;
+        }
+    
+    }
+}
+
+.main__section__nosotros__pagos img{
+    display: none;
+    width: 100%;
+    height: 100px;
+}
+
+.main__section__map{
+    margin: 100px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .map__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 300px;
+        gap: 12px;
+        background: radial-gradient(rgb(68, 68, 68) 5%, black);
+        opacity: 850%;
+        border-radius: 6px;
+        h2{
+            font-size: 45px;
+            font-family: sans-serif;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            
+        }
+        p{
+            font-size: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            line-height: 23px;
+            color: crimson;
+            opacity: 75%;
+            padding: 5px;
+        }
+    }
+    #mapa__local {
+        width: 350px;
+        height: 500px;
+        border: 5px red double;
+        border-radius: 6px;
+        iframe{
+            width: 340px;
+            height: 490px;
+        }
+    }
+    
+}
+
+
+/*Media tablet------------------------------------------------------------------------*/
+@media screen and (min-width: $mediaTablet) {
+    .main__section__since{
+        h1{
+            font-size: 65px;
+        }
+        p{
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+    .main__section__show{
+        h2{
+            font-size: 45px;
+        }
+        div img{
+            width: 500px;
+            height: auto;
+        }
+    }
+    
+    .main__section__nosotros__pagos img{
+        display: flex;
+        width: 100vw;
+        height: 100px;
+        margin: 100px 0;
+        border: 2px solid black;
+    }
+    .main__section__map .map__info{
+        width: 400px;
+        height: 450px;
+        gap: 20px;
+        h2{
+            font-size: 50px;
+            line-height: 55px;
+        }
+        p{
+            font-size: 25px;
+            line-height: 28px;
+        }
+    }
+   
+    #mapa__local {
+        width: 450px;
+        height: 550px;
+        iframe{
+            width: 440px;
+            height: 540px;
+        }
+    }
+}
+
+
+
+/*Media Desktop--------------------------------------------------------------*/
+@media screen and (min-width: $mediaDesktop){
+    .main__encabezado__nosotros h1{
+        font-size: 75px;
+    }
+    .main__section__since{
+        h1{
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 35px;
+            line-height: 40px;
+            width: 80vw;
+            margin-bottom: 90px;
+        }
+
+    }
+    .main__section__show{
+        h2{
+            width: 80%;
+            font-size: 60px;
+        }
+        div{
+            gap: 20px;
+            img{
+                width: 450px;
+                height: auto;
+            }
+        }
+    }
+    .main__section__nosotros__pagos img{
+        width: 80vw;
+        height: 120px;
+        margin: 200px auto;
+    }
+    .main__section__map{
+       gap: 25px;
+       margin-bottom: 200px;
+       background-image: url(../pics/ciudad.jpg);
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       filter: saturate(80%);
+       height: 800px;
+    }
+
+    #mapa__local{
+        box-shadow: 5px 5px 5px 5px rgba(10, 10, 10, 0.6);
+    }
+
+}

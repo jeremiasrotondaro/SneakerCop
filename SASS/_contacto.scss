@@ -1,0 +1,221 @@
+/*Contacto--------------------------------------*/
+#main__contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0 150px 0;
+    gap: 40px;
+    width: 100%;
+    .main__contacto__foto img{
+        width: 350px;
+        height: 350px;
+    }
+    .main__contacto__formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: -20px;
+        .main__contacto__pre{
+            h1{
+                font-size: 55px;
+                font-family: $fontPrincipal;
+                text-decoration: underline red 10px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            p{
+                font-size: 20px;
+                font-family: sans-serif;
+                line-height: 23px;
+                text-align: center;
+                margin-bottom: 50px;
+                padding: 0 20px;
+            }
+        }
+        .main__contacto__info{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            img{
+                margin-top: -12px;
+                width: 40px;
+                height: 40px;
+            
+            }
+            p{
+                font-size: 15px;
+                font-family: sans-serif;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+        .main__contacto__info2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            img{
+                margin-top: -12px;
+                width: 40px;
+                height: 40px;
+            }
+            p{
+                font-size: 15px;
+                font-family: sans-serif;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+        .form__completo input{
+            color: black;
+            font-family: sans-serif;
+            font-size: 17px;
+            margin-bottom: 10px;
+            width: 350px;
+            height: 40px;
+            margin-bottom: 25px;
+        }
+        .form__mensaje textarea{
+            color: black;
+            font-family: sans-serif;
+            font-size: 17px;
+            margin-bottom: 10px;
+            overflow-y: scroll;
+            width: 350px;
+            height: 85px;
+            margin-bottom: 25px;
+        }
+        .form__boton input{
+            width: 350px;
+            height: 40px;
+            background-color: red;
+            color: white;
+            font-family: $fontPrincipal;
+            font-size: 25px;
+            text-align: center;
+            box-shadow: 2px 5px black;
+        }
+        .form__boton input:hover{
+            scale: 0.9;
+            transition: 0.3s;
+        }
+    }
+}
+
+
+/*Media tablet------------------------------------------------------------------------*/
+@media screen and (min-width: $mediaTablet) {
+    .main__contacto__foto img{
+        width: 550px;
+        height: 500px;
+    }
+    .main__contacto__formulario .main__contacto__pre h1{
+        font-size: 60px;
+    }
+    .main__contacto__formulario .main__contacto__pre p{
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        padding: 0 50px;
+    }
+    .main__contacto__info{
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+   .main__contacto__info2{
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .form__completo input{
+        font-size: 20px;
+        width: 550px;
+        height: 40px;
+    }
+    .form__mensaje textarea{
+        font-size: 17px;
+        width: 550px;
+        height: 85px;
+    }
+    .form__boton input{
+        width: 450px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+
+}
+
+
+
+/*Media Desktop--------------------------------------------------------------*/
+@media screen and (min-width: $mediaDesktop){
+    #main__contacto{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 50px 0px;
+        padding: 0 30px;
+        .main__contacto__foto img{
+            width: 100%;
+            height: 800px;
+        }
+        .main__contacto__formulario{
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 0;
+            .main__contacto__pre{
+                h1{
+                    text-align: center;
+                    font-size: 70px;
+                }
+                p{
+                    text-align: left;
+                    font-size: 25px;
+                    padding: 0;
+                    line-height: 35px;
+                }
+            }
+            .main__contacto__info{
+                p{
+                    font-size: 18px;
+                }
+            }
+            .main__contacto__info2{
+                p{
+                    font-size: 18px;
+                }
+            }
+
+            .form__completo input{
+                width: 600px;
+            }
+            .form__mensaje textarea{
+                width: 600px;
+                height: 120px;
+            }
+            .form__boton input{
+                width: 600px;
+            }
+        }
+       
+    }
+
+}
+
+
