@@ -418,19 +418,23 @@ footer{
     /*Index------------------------------------------------*/
     .navbar{
         font-size: 25px;
-        .navbar-brand img{
-            width: 110px;
-            transform: scale(1.6);
-        }
-        .collapse.navbar-collapse{
-            justify-content: flex-end;
-            ul li{
-                margin:0 10px;
-                ul li a{
-                    font-size: 20px;
+        .container-fluid.nav-centrar{
+            .navbar-brand img{
+                width: 80px;
+                transform: scale(1.9);
+                margin-left: 50px;
+            }
+            .collapse.navbar-collapse{
+                justify-content: flex-end;
+                ul li{
+                    margin:0 10px;
+                    ul li a{
+                        font-size: 20px;
+                    }
                 }
             }
         }
+       
     }
     
    
@@ -547,6 +551,7 @@ footer{
         justify-content:space-evenly;
         align-items: flex-start;
         width: 100%;
+        padding: 0 20px;
         .footer__preg__compra{
             align-items: flex-start;
             h3{
@@ -570,7 +575,14 @@ footer{
         } 
         .footer__logos{
             flex-direction: column;
+            align-items: flex-end;
             width: 500px;
+            .footer__logos__sc{
+                img{
+                    text-align: center;
+                    margin-right: 20px;
+                }
+            }
             .footer__logos__redes ul{
                 margin-top: -5px;
             }
@@ -580,6 +592,7 @@ footer{
             width: 200px;
             p{
                 text-align: center;
+                margin-right: 30px;
             }   
         }
     }

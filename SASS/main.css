@@ -574,20 +574,21 @@ footer .footer__copy p {
   .navbar {
     font-size: 25px;
   }
-  .navbar .navbar-brand img {
-    width: 110px;
-    -webkit-transform: scale(1.6);
-            transform: scale(1.6);
+  .navbar .container-fluid.nav-centrar .navbar-brand img {
+    width: 80px;
+    -webkit-transform: scale(1.9);
+            transform: scale(1.9);
+    margin-left: 50px;
   }
-  .navbar .collapse.navbar-collapse {
+  .navbar .container-fluid.nav-centrar .collapse.navbar-collapse {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .navbar .collapse.navbar-collapse ul li {
+  .navbar .container-fluid.nav-centrar .collapse.navbar-collapse ul li {
     margin: 0 10px;
   }
-  .navbar .collapse.navbar-collapse ul li ul li a {
+  .navbar .container-fluid.nav-centrar .collapse.navbar-collapse ul li ul li a {
     font-size: 20px;
   }
   .main__banner__principal {
@@ -733,6 +734,7 @@ footer .footer__copy p {
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
+    padding: 0 20px;
   }
   footer .footer__preg__compra {
     -webkit-box-align: start;
@@ -762,7 +764,14 @@ footer .footer__copy p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     width: 500px;
+  }
+  footer .footer__logos .footer__logos__sc img {
+    text-align: center;
+    margin-right: 20px;
   }
   footer .footer__logos .footer__logos__redes ul {
     margin-top: -5px;
@@ -773,6 +782,7 @@ footer .footer__copy p {
   }
   footer .footer__copy p {
     text-align: center;
+    margin-right: 30px;
   }
 }
 
