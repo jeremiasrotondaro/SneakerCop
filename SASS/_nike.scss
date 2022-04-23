@@ -5,25 +5,41 @@
 .carousel-item.nike img{
     height: 400px;
 }
+
+.filtro__pagina{
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid black;
+    height: 150px;
+    text-align: center;
+
+}
+
 .shop-items-nike{
     margin: 100px 10px;
-}
-.card-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p{
+    img{
+        &:hover{
+            scale: 1.1;
+        }
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            text-align: center;
+        }
+    }
+    .selec__talle__nike{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 }
-.selec__talle__nike{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+
 
     
