@@ -1,29 +1,105 @@
 /*Pag-Nike-----------------------------------------------------------------------------------------------------*/
 #carouselNike{
     margin: 50px 10px;
-}
-.carousel-item.nike img{
-    height: 400px;
-}
-.shop-items-nike{
-    margin: 100px 10px;
-}
-.card-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p{
-        text-align: center;
+    .carousel-item.nike img{
+        height: 250px;
     }
 }
-.selec__talle__nike{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+
+
+.titulo__pagina__nike{
     text-align: center;
+    margin: 100px auto 0 auto;
+    h1{
+        font-size: 60px;
+        font-family: $fontPrincipal;
+        color: black;
+    }
 }
 
-    
+
+.filtro__pagina{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    width: 95%;
+    margin: 0 auto ;
+    border: 2px solid black;
+    height: auto;
+    text-align: center;
+    font-family: sans-serif;
+    .filtro--nav:hover{
+        background-color: black;
+        color: white;
+    }
+}
+
+.shop-items-nike{
+    margin: 50px 10px 150px 10px;
+    img{
+        &:hover{
+            scale: 1.1;
+        }
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            text-align: center;
+        }
+    }
+    .selec__talle__nike{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .btn--carrito:hover{
+            color:rgb(253, 1, 1);
+        }
+    }
+}
+
+
+/*Media tablet------------------------------------------------------------------------*/
+@media screen and (min-width: $mediaTablet){
+    #carouselNike{
+        .carousel-item.nike img{
+            height: 450px;
+        }
+    }
+    .titulo__pagina__nike{
+        h1{
+            font-size: 70px;
+        }
+    }
+    .filtro__pagina{
+        height: 60px;
+    }
+}
+
+
+
+
+
+/*Media Desktop--------------------------------------------------------------*/
+@media screen and (min-width: $mediaDesktop){
+    #carouselNike{
+        .carousel-item.nike img{
+            height: 550px;
+        }
+    }
+    .titulo__pagina__nike{
+        h1{
+            font-size: 80px;
+        }
+    }
+
+
+
+}

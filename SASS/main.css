@@ -37,6 +37,107 @@ footer {
   grid-area: footer;
 }
 
+/* Maps */
+.back__fil2 {
+  background: black;
+}
+
+.back__prodest {
+  background: black;
+}
+
+.back__fil1 {
+  background: radial-gradient(#fd0101, black 35%);
+}
+
+/* Extend */
+.btn__filtro, .btn__filtro--danger {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.btn__filtro--danger {
+  background-color: rgba(255, 0, 0, 0.865);
+  color: white;
+}
+
+/* Mixing */
+.btn--talles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.865);
+}
+
+.btn--carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.921);
+}
+
+.filtro--nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  font-size: 16px;
+}
+
+.filtro--carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  border-radius: 20px;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.865);
+  font-size: 14px;
+}
+
 /*Index----------------------------------------------------------------------------------------*/
 .navbar {
   font-family: "Permanent Marker", cursive;
@@ -49,7 +150,7 @@ footer {
   border-bottom: 1px solid black;
   -webkit-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
           box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
-  background-color: rgba(255, 255, 255, 0.918);
+  background-color: rgba(0, 0, 0, 0.921);
 }
 
 .navbar .container-fluid.nav-centrar .navbar-brand img {
@@ -62,11 +163,26 @@ footer {
   border: 5px solid;
 }
 
-.navbar .container-fluid.nav-centrar .collapse.navbar-collapse ul li ul li {
-  font-size: 20px;
+.navbar .container-fluid.nav-centrar .collapse.navbar-collapse ul li a {
+  color: white;
 }
 
 .navbar .container-fluid.nav-centrar .collapse.navbar-collapse ul li a:hover {
+  -webkit-text-decoration: overline black 2px solid;
+          text-decoration: overline black 2px solid;
+  opacity: 75%;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: red;
+}
+
+.navbar .container-fluid.nav-centrar .collapse.navbar-collapse .dropdown-menu li a {
+  font-size: 20px;
+  color: black;
+}
+
+.navbar .container-fluid.nav-centrar .collapse.navbar-collapse .dropdown-menu li a:hover {
   -webkit-text-decoration: overline black 2px solid;
           text-decoration: overline black 2px solid;
   opacity: 75%;
@@ -242,7 +358,7 @@ footer {
 
 /*Footer-------------------------------*/
 footer {
-  background-color: rgba(255, 255, 255, 0.918);
+  background-color: rgba(0, 0, 0, 0.921);
   margin: 50px auto 0 auto;
   width: 95%;
   display: -webkit-box;
@@ -259,6 +375,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   border-top: 2px solid black;
+  color: white;
 }
 
 footer .footer__preg__compra {
@@ -281,8 +398,8 @@ footer .footer__preg__compra {
 footer .footer__preg__compra h3 {
   font-size: 25px;
   font-family: "Permanent Marker", cursive;
-  -webkit-text-decoration: underline 1px solid black;
-          text-decoration: underline 1px solid black;
+  -webkit-text-decoration: underline 1px solid white;
+          text-decoration: underline 1px solid white;
   text-align: center;
 }
 
@@ -329,8 +446,8 @@ footer .footer__met__pagos {
 footer .footer__met__pagos h3 {
   font-size: 25px;
   font-family: "Permanent Marker", cursive;
-  -webkit-text-decoration: underline 1px solid black;
-          text-decoration: underline 1px solid black;
+  -webkit-text-decoration: underline 1px solid white;
+          text-decoration: underline 1px solid white;
 }
 
 footer .footer__met__pagos img {
@@ -378,7 +495,6 @@ footer .footer__logos .footer__logos__redes ul li img {
 
 footer .footer__copy p {
   font-size: 15px;
-  color: black;
 }
 
 /*Media tablet------------------------------------------------------------------------*/
@@ -574,27 +690,31 @@ footer .footer__copy p {
   .navbar {
     font-size: 25px;
   }
-  .navbar .navbar-brand img {
-    width: 110px;
-    -webkit-transform: scale(1.6);
-            transform: scale(1.6);
+  .navbar .container-fluid.nav-centrar .navbar-brand img {
+    width: 70px;
+    -webkit-transform: scale(1.9);
+            transform: scale(1.9);
+    margin-left: 100px;
+    margin-top: 5px;
   }
-  .navbar .collapse.navbar-collapse {
+  .navbar .container-fluid.nav-centrar .collapse.navbar-collapse {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    margin-right: 20px;
   }
-  .navbar .collapse.navbar-collapse ul li {
+  .navbar .container-fluid.nav-centrar .collapse.navbar-collapse ul li {
     margin: 0 10px;
   }
-  .navbar .collapse.navbar-collapse ul li ul li a {
-    font-size: 20px;
+  .navbar .container-fluid.nav-centrar .collapse.navbar-collapse ul li a {
+    font-size: 25px;
   }
   .main__banner__principal {
     height: 700px;
   }
   .main__titulo__produ {
     margin-top: 100px;
+    margin-bottom: 30px;
   }
   .main__titulo__produ h1 {
     font-size: 40px;
@@ -613,8 +733,8 @@ footer .footer__copy p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 95%;
-    height: 500px;
+    width: 85%;
+    height: 450px;
     border: 1px solid white;
     margin: 0 auto 50px auto;
     background-image: url(./pics/banner-prod-destacados1.png);
@@ -648,8 +768,8 @@ footer .footer__copy p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 95%;
-    height: 500px;
+    width: 85%;
+    height: 450px;
     border: 1px solid white;
     margin: 0 auto 50px auto;
     background-image: url(./pics/banner-prod-destacados1.png);
@@ -733,6 +853,7 @@ footer .footer__copy p {
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
+    padding: 0 20px;
   }
   footer .footer__preg__compra {
     -webkit-box-align: start;
@@ -762,7 +883,14 @@ footer .footer__copy p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     width: 500px;
+  }
+  footer .footer__logos .footer__logos__sc img {
+    text-align: center;
+    margin-right: 20px;
   }
   footer .footer__logos .footer__logos__redes ul {
     margin-top: -5px;
@@ -773,6 +901,7 @@ footer .footer__copy p {
   }
   footer .footer__copy p {
     text-align: center;
+    margin-right: 30px;
   }
 }
 
@@ -866,6 +995,7 @@ footer .footer__copy p {
   width: 80%;
   background: -webkit-gradient(linear, right top, left top, from(black), to(red));
   background: linear-gradient(to left, black, red);
+  opacity: 100%;
 }
 
 .main__sec__drop {
@@ -1361,7 +1491,7 @@ footer .footer__copy p {
   font-family: sans-serif;
   text-align: center;
   line-height: 23px;
-  color: crimson;
+  color: #fa0032;
   opacity: 75%;
   padding: 5px;
 }
@@ -1742,15 +1872,55 @@ footer .footer__copy p {
   margin: 50px 10px;
 }
 
-.carousel-item.nike img {
-  height: 400px;
+#carouselNike .carousel-item.nike img {
+  height: 250px;
+}
+
+.titulo__pagina__nike {
+  text-align: center;
+  margin: 100px auto 0 auto;
+}
+
+.titulo__pagina__nike h1 {
+  font-size: 60px;
+  font-family: "Permanent Marker", cursive;
+  color: black;
+}
+
+.filtro__pagina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  width: 95%;
+  margin: 0 auto;
+  border: 2px solid black;
+  height: auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.filtro__pagina .filtro--nav:hover {
+  background-color: black;
+  color: white;
 }
 
 .shop-items-nike {
-  margin: 100px 10px;
+  margin: 50px 10px 150px 10px;
 }
 
-.card-body {
+.shop-items-nike img:hover {
+  scale: 1.1;
+}
+
+.shop-items-nike .card-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1766,11 +1936,11 @@ footer .footer__copy p {
           align-items: center;
 }
 
-.card-body p {
+.shop-items-nike .card-body p {
   text-align: center;
 }
 
-.selec__talle__nike {
+.shop-items-nike .selec__talle__nike {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1786,4 +1956,31 @@ footer .footer__copy p {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.shop-items-nike .selec__talle__nike .btn--carrito:hover {
+  color: #fd0101;
+}
+
+/*Media tablet------------------------------------------------------------------------*/
+@media screen and (min-width: 700px) {
+  #carouselNike .carousel-item.nike img {
+    height: 450px;
+  }
+  .titulo__pagina__nike h1 {
+    font-size: 70px;
+  }
+  .filtro__pagina {
+    height: 60px;
+  }
+}
+
+/*Media Desktop--------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+  #carouselNike .carousel-item.nike img {
+    height: 550px;
+  }
+  .titulo__pagina__nike h1 {
+    font-size: 80px;
+  }
 }

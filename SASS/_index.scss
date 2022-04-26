@@ -14,15 +14,28 @@
         .navbar-toggler{
             border: 5px solid;
         }
-        .collapse.navbar-collapse ul li ul li{
-            font-size: 20px;
-        }
-        .collapse.navbar-collapse ul li a:hover{
-            text-decoration: overline black 2px solid;
-            opacity: 75%;
-            border-radius: 50%;
-            transition: 0.5s;
-            color: red;
+        .collapse.navbar-collapse{
+            ul li a{
+                color: white;
+                &:hover{
+                    text-decoration: overline black 2px solid;
+                    opacity: 75%;
+                    border-radius: 50%;
+                    transition: 0.5s;
+                    color: red;
+                }
+            }
+            .dropdown-menu li a{
+                font-size: 20px;
+                color: black;
+                &:hover{
+                    text-decoration: overline black 2px solid;
+                    opacity: 75%;
+                    border-radius: 50%;
+                    transition: 0.5s;
+                    color: red;
+                }
+            }
         }
     }
 }
@@ -48,8 +61,8 @@
     align-items: center;
     margin-top: 20px;
     h1{
-        background-color: black;
-        color: white;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         font-size: 25px;
         font-family: $fontPrincipal;
         text-align: center;
@@ -174,6 +187,7 @@ footer{
     justify-content: center;
     align-items: center;
     border-top: 2px solid black;
+    color: white;
     .footer__preg__compra{
         display: flex;
         flex-direction: column;
@@ -183,7 +197,7 @@ footer{
         h3{
             font-size: 25px;
             font-family: $fontPrincipal;
-            text-decoration: underline 1px solid black;
+            text-decoration: underline 1px solid white;
             text-align: center;
         }
         ul{
@@ -209,7 +223,7 @@ footer{
         h3{
             font-size: 25px;
             font-family: $fontPrincipal;
-            text-decoration: underline 1px solid black;
+            text-decoration: underline 1px solid white;
         }
         img{
             width: 300px;
@@ -240,7 +254,6 @@ footer{
     }
     .footer__copy p{
         font-size: 15px;
-        color: black;
         
     }
 }
@@ -418,19 +431,25 @@ footer{
     /*Index------------------------------------------------*/
     .navbar{
         font-size: 25px;
-        .navbar-brand img{
-            width: 110px;
-            transform: scale(1.6);
-        }
-        .collapse.navbar-collapse{
-            justify-content: flex-end;
-            ul li{
-                margin:0 10px;
-                ul li a{
-                    font-size: 20px;
+        .container-fluid.nav-centrar{
+            .navbar-brand img{
+                width: 70px;
+                transform: scale(1.9);
+                margin-left: 100px;
+                margin-top: 5px;
+            }
+            .collapse.navbar-collapse{
+                justify-content: flex-end;
+                margin-right: 20px;
+                ul li{
+                    margin:0 10px;
+                    & a{
+                        font-size: 25px;
+                    }
                 }
             }
         }
+       
     }
     
    
@@ -439,6 +458,7 @@ footer{
     }
     .main__titulo__produ{
         margin-top: 100px;
+        margin-bottom: 30px;
         h1{
             font-size: 40px;
             width: 80%;
@@ -456,8 +476,8 @@ footer{
     }
     .main__banner__productos__4{
         display: flex;
-        width: 95%;
-        height: 500px;
+        width: 85%;
+        height: 450px;
         border: 1px solid white;
         margin: 0 auto 50px auto;
     
@@ -482,8 +502,8 @@ footer{
     
     .main__banner__productos__5{
         display: flex;
-        width: 95%;
-        height: 500px;
+        width: 85%;
+        height: 450px;
         border: 1px solid white;
         margin: 0 auto 50px auto;
     
@@ -547,6 +567,7 @@ footer{
         justify-content:space-evenly;
         align-items: flex-start;
         width: 100%;
+        padding: 0 20px;
         .footer__preg__compra{
             align-items: flex-start;
             h3{
@@ -570,7 +591,14 @@ footer{
         } 
         .footer__logos{
             flex-direction: column;
+            align-items: flex-end;
             width: 500px;
+            .footer__logos__sc{
+                img{
+                    text-align: center;
+                    margin-right: 20px;
+                }
+            }
             .footer__logos__redes ul{
                 margin-top: -5px;
             }
@@ -580,6 +608,7 @@ footer{
             width: 200px;
             p{
                 text-align: center;
+                margin-right: 30px;
             }   
         }
     }
