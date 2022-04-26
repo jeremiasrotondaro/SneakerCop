@@ -2,3 +2,77 @@ $fontPrincipal: 'Permanent Marker', cursive;
 $colorPincipal:  rgba(0, 0, 0, 0.921);
 $mediaTablet: 700px;
 $mediaDesktop: 1200px;
+
+
+
+
+
+/* Maps */
+$back-color: (
+    fil2: rgb(0, 0, 0),
+    prodest: rgb(0, 0, 0),
+    fil1: radial-gradient( rgb(253, 1, 1) , rgb(0, 0, 0) 35%),
+);
+@each $nombre, $valor in $back-color {
+    .back__#{$nombre} {
+        background: $valor;
+    }
+}
+
+
+
+/* Extend */
+.btn__talles{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.btn__talles--danger{
+    @extend .btn__talles;
+    background-color: rgba(255, 0, 0, 0.865);
+    color: white;
+}
+
+
+
+
+/* Mixing */
+@mixin btn ($col, $bg) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: $col;
+    background-color: $bg;   
+}
+.btn--talles{
+    @include btn( rgb(255, 255, 255), rgba(255, 0, 0, 0.865))
+}
+.btn--carrito{
+    @include btn(rgb(255, 255, 255), $colorPincipal )
+}
+
+
+@mixin filtro ($col, $bg, $fs) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    color: $col;
+    background-color: $bg;
+    font-size: $fs;
+}
+.filtro--nav{
+    @include filtro(rgb(0, 0, 0), rgb(255, 255, 255), 16px)
+
+}
+.filtro--carrito{
+    @include filtro(rgb(255, 255, 255), rgba(255, 0, 0, 0.865), 14px)
+}

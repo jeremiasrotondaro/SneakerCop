@@ -37,6 +37,107 @@ footer {
   grid-area: footer;
 }
 
+/* Maps */
+.back__fil2 {
+  background: black;
+}
+
+.back__prodest {
+  background: black;
+}
+
+.back__fil1 {
+  background: radial-gradient(#fd0101, black 35%);
+}
+
+/* Extend */
+.btn__talles, .btn__talles--danger {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.btn__talles--danger {
+  background-color: rgba(255, 0, 0, 0.865);
+  color: white;
+}
+
+/* Mixing */
+.btn--talles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.865);
+}
+
+.btn--carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.921);
+}
+
+.filtro--nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  font-size: 16px;
+}
+
+.filtro--carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  border-radius: 20px;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.865);
+  font-size: 14px;
+}
+
 /*Index----------------------------------------------------------------------------------------*/
 .navbar {
   font-family: "Permanent Marker", cursive;
@@ -1390,7 +1491,7 @@ footer .footer__copy p {
   font-family: sans-serif;
   text-align: center;
   line-height: 23px;
-  color: crimson;
+  color: #fa0032;
   opacity: 75%;
   padding: 5px;
 }
@@ -1771,20 +1872,48 @@ footer .footer__copy p {
   margin: 50px 10px;
 }
 
-.carousel-item.nike img {
-  height: 400px;
+#carouselNike .carousel-item.nike img {
+  height: 250px;
+}
+
+.titulo__pagina__nike {
+  text-align: center;
+  margin: 100px auto 0 auto;
+}
+
+.titulo__pagina__nike h1 {
+  font-size: 60px;
+  font-family: "Permanent Marker", cursive;
+  color: black;
 }
 
 .filtro__pagina {
-  width: 90%;
-  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  width: 95%;
+  margin: 0 auto;
   border: 2px solid black;
-  height: 150px;
+  height: auto;
   text-align: center;
+  font-family: sans-serif;
+}
+
+.filtro__pagina .filtro--nav:hover {
+  background-color: black;
+  color: white;
 }
 
 .shop-items-nike {
-  margin: 100px 10px;
+  margin: 50px 10px 150px 10px;
 }
 
 .shop-items-nike img:hover {
@@ -1827,4 +1956,31 @@ footer .footer__copy p {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.shop-items-nike .selec__talle__nike .btn--carrito:hover {
+  color: #fd0101;
+}
+
+/*Media tablet------------------------------------------------------------------------*/
+@media screen and (min-width: 700px) {
+  #carouselNike .carousel-item.nike img {
+    height: 450px;
+  }
+  .titulo__pagina__nike h1 {
+    font-size: 70px;
+  }
+  .filtro__pagina {
+    height: 60px;
+  }
+}
+
+/*Media Desktop--------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+  #carouselNike .carousel-item.nike img {
+    height: 550px;
+  }
+  .titulo__pagina__nike h1 {
+    font-size: 80px;
+  }
 }
