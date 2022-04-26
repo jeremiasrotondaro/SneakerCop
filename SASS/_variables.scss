@@ -22,14 +22,14 @@ $back-color: (
 
 
 /* Extend */
-.btn__talles{
+.btn__filtro{
     text-decoration: none;
     padding: 10px;
     font-size: 17px;
     font-family: sans-serif;
 }
-.btn__talles--danger{
-    @extend .btn__talles;
+.btn__filtro--danger{
+    @extend .btn__filtro;
     background-color: rgba(255, 0, 0, 0.865);
     color: white;
 }

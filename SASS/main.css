@@ -51,14 +51,14 @@ footer {
 }
 
 /* Extend */
-.btn__talles, .btn__talles--danger {
+.btn__filtro, .btn__filtro--danger {
   text-decoration: none;
   padding: 10px;
   font-size: 17px;
   font-family: sans-serif;
 }
 
-.btn__talles--danger {
+.btn__filtro--danger {
   background-color: rgba(255, 0, 0, 0.865);
   color: white;
 }
