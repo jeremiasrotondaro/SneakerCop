@@ -1,4 +1,4 @@
-/*Pag-Nike-----------------------------------------------------------------------------------------------------*/
+/*Pag-----Nike--Jordan--Adidas--Puma--Fila--Reebok-------------------------------------------------------------------------------------------*/
 #carouselNike{
     margin: 50px 10px;
     .carousel-item.nike img{
@@ -11,7 +11,7 @@
     text-align: center;
     margin: 100px auto 0 auto;
     h1{
-        font-size: 60px;
+        font-size: 40px;
         font-family: $fontPrincipal;
         color: black;
     }
@@ -75,7 +75,7 @@
     }
     .titulo__pagina__nike{
         h1{
-            font-size: 70px;
+            font-size: 50px;
         }
     }
     .filtro__pagina{
@@ -91,12 +91,12 @@
 @media screen and (min-width: $mediaDesktop){
     #carouselNike{
         .carousel-item.nike img{
-            height: 550px;
+            height: 500px;
         }
     }
     .titulo__pagina__nike{
         h1{
-            font-size: 80px;
+            font-size: 40px;
         }
     }
 

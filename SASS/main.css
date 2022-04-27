@@ -717,7 +717,7 @@ footer .footer__copy p {
     margin-bottom: 30px;
   }
   .main__titulo__produ h1 {
-    font-size: 40px;
+    font-size: 20px;
     width: 80%;
   }
   .main__banner__productos {
@@ -1867,7 +1867,7 @@ footer .footer__copy p {
   }
 }
 
-/*Pag-Nike-----------------------------------------------------------------------------------------------------*/
+/*Pag-----Nike--Jordan--Adidas--Puma--Fila--Reebok-------------------------------------------------------------------------------------------*/
 #carouselNike {
   margin: 50px 10px;
 }
@@ -1882,7 +1882,7 @@ footer .footer__copy p {
 }
 
 .titulo__pagina__nike h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-family: "Permanent Marker", cursive;
   color: black;
 }
@@ -1968,7 +1968,7 @@ footer .footer__copy p {
     height: 450px;
   }
   .titulo__pagina__nike h1 {
-    font-size: 70px;
+    font-size: 50px;
   }
   .filtro__pagina {
     height: 60px;
@@ -1978,9 +1978,9 @@ footer .footer__copy p {
 /*Media Desktop--------------------------------------------------------------*/
 @media screen and (min-width: 1200px) {
   #carouselNike .carousel-item.nike img {
-    height: 550px;
+    height: 500px;
   }
   .titulo__pagina__nike h1 {
-    font-size: 80px;
+    font-size: 40px;
   }
 }

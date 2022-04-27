@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADIDAS - SneakerCop</title>
+    <meta name="description" content="¡Descubrí Todas Las Novedades de Adidas Para Esta Nueva Temporada Acá en SneakerCop!">
+    <meta name="keywords" content="SneakerCop, Sneakers, Zapatillas, Jordan, Nike, Adidas, Hype Indumentaria, Calzado, Accesorios">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../pics/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../SASS/main.css">
+</head>
+<body class="grid__container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <div class="container-fluid nav-centrar">
+            <a class="navbar-brand" href="../index.html"><img src="../pics/logoo-removebg-preview.png" alt="logo marca"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../paginas/productos.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Marcas
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="../paginas/marcas.html">Todas</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="./jordan.html">Jordan</a></li>
+                    <li><a class="dropdown-item" href="./nike.html">Nike</a></li>
+                    <li><a class="dropdown-item" href="./adidas.html">Adidas</a></li>
+                    <li><a class="dropdown-item" href="#">Puma</a></li>
+                    <li><a class="dropdown-item" href="#">Fila</a></li>
+                    <li><a class="dropdown-item" href="#">Reebok</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../paginas/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../paginas/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div id="carouselNike" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselNike" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselNike" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselNike" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner nike">
+              <div class="carousel-item nike active">
+                <img src="../pics/pag-adidas/caro-adidas-zapaaa.webp" class="d-block w-100" alt="imagen ndm adidas">
+              </div>
+              <div class="carousel-item nike">
+                <img src="../pics/pag-adidas/caro-adidas-super.jpg" class="d-block w-100" alt="imagen superstars">
+              </div>
+              <div class="carousel-item nike">
+                <img src="../pics/pag-adidas/caro-adidas-zapa.png" class="d-block w-100" alt="imagen zapas ultraboost">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNike" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselNike" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="titulo__pagina__nike">
+          <h1>Adidas</h1>
+        </div>
+
+
+
+
+        <div class="filtro__pagina back__fil1">
+          <select class="filtro filtro--nav" name="categorias" >
+            <option value="1" selected>Categorias</option>
+            <option value="2">Camperas</option>
+            <option value="3">Shorts</option>
+            <option value="4">Pantalones</option>
+            <option value="5" >Zapatillas</option>
+            <option value="6">Remeras</option>
+            <option value="7">Accesorios</option>
+          </select>
+
+          <select class="filtro filtro--nav" name="categorias">
+            <option value="1" selected>Genero</option>
+            <option value="2">Mujer</option>
+            <option value="3">Hombre</option>
+            <option value="4">Niños</option>
+            <option value="5">Unisex</option>
+          </select>
+
+          <select class="filtro filtro--nav" name="categorias">
+            <option value="1" selected>Talle</option>
+            <option value="2">S</option>
+            <option value="3">M</option>
+            <option value="4">L</option>
+            <option value="5">XL</option>
+            <option value="6">XXL</option>
+            <option value="7">39</option>
+            <option value="8">40</option>
+            <option value="9">41</option>
+            <option value="10">42</option>
+            <option value="11">43</option>
+            <option value="12">44</option>
+            <option value="13">45</option>
+          </select>
+
+          <select class="filtro filtro--nav" name="categorias">
+            <option value="1" selected>Precio</option>
+            <option value="2">$0 a $5.000</option>
+            <option value="3">$5.000 a $10.000</option>
+            <option value="4">$10.000 a $15.000</option>
+            <option value="5">$15.000 a $20.000</option>
+            <option value="6">Más de $20.000</option>
+          </select>
+      
+          <button class="btn btn__filtro--danger" type="submit">Filtrar</button>
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 shop-items-nike">
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-adidas/adidas-item-1.png" class="card-img-top" alt="imagen Yeezy Boost 350 V2">
+                <div class="card-body centar-items">
+                  <h5 class="card-title">Yeezy Boost 350 V2</h5>
+                  <p class="card-text">Adidas Yeezy Boost 350 V2 Dazzling Blue</p>
+                  <p class="card-text">$107.000</p>
+                    <div class="selec__talle__nike">
+                        <select class="filtro filtro--carrito" name="numero-calzado" id="numero-calzado">
+                            <option value="1">41</option>
+                            <option value="2">41.5</option>
+                            <option value="3">42</option>
+                            <option value="4" selected>44</option>
+                        </select>
+                        <button class="btn btn--carrito" type="submit">Agregar al carrito</button>
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-adidas/adidas-item-2.png" class="card-img-top" alt="imagen Sweatpant Adidas logo ">
+                <div class="card-body">
+                  <h5 class="card-title">Sweatpant Adidas logo </h5>
+                  <p class="card-text">Adidas Logo Sweatpant Black/White</p>
+                  <p class="card-text">$18.900</p>
+                  <div class="selec__talle__nike">
+                    <select  class="filtro filtro--carrito" name="numero-calzado" id="numero-calzado">
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3" disabled>L</option>
+                        <option value="4" selected>XL</option>
+                    </select>
+                    <button class="btn btn--carrito" type="submit">Agregar al carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-adidas/adidas-item-3.png" class="card-img-top" alt="imagen Camiseta Miami Heat">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Miami Heat</h5>
+                  <p class="card-text">Adidas Miami Heat Alonzo Mourning NBA Jerseys</p>
+                  <p class="card-text">$27.100</p>
+                  <div class="selec__talle__nike">
+                    <select  class="filtro filtro--carrito" name="numero-calzado" id="numero-calzado">
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="4">XL</option>
+                    </select>
+                    <button class="btn btn--carrito" type="submit">Agregar al carrito</button>
+                </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-adidas/adidas-item-4.png" class="card-img-top" alt="imagen Yeezy Boost 700">
+                <div class="card-body">
+                  <h5 class="card-title">Yeezy Boost 700</h5>
+                  <p class="card-text">Adidas Yeezy Boost 700 Utility black</p>
+                  <p class="card-text">$121.000</p>
+                  <div class="selec__talle__nike">
+                    <select  class="filtro filtro--carrito" name="numero-calzado" id="numero-calzado">
+                        <option value="1">41</option>
+                        <option value="2">41.5</option>
+                        <option value="3">42</option>
+                        <option value="4" selected>44</option>
+                    </select>
+                    <button class="btn btn--carrito" type="submit">Agregar al carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-adidas/adidas-item-5.png" class="card-img-top" alt=" imagen zapatillas Yeezy 500">
+                <div class="card-body">
+                  <h5 class="card-title">Yeezy 500</h5>
+                  <p class="card-text">Adidas Yeezy 500 Blush</p>
+                  <p class="card-text">$68.200</p>
+                  <div class="selec__talle__nike">
+                    <select class="filtro filtro--carrito" name="numero-calzado" id="numero-calzado">
+                        <option value="1">41</option>
+                        <option value="2">41.5</option>
+                        <option value="3">42</option>
+                        <option value="4" selected>44</option>
+                    </select>
+                    <button class="btn btn--carrito" type="submit">Agregar al carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../pics/pag-adidas/adidas-item-6.png" class="card-img-top" alt="imagen Camiseta Houston Dynamo">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Houston Dynamo </h5>
+                  <p class="card-text">Houston Dynamo Football Club ADIDAS TEE</p>
+                  <p class="card-text">$16.500</p>
+                  <div class="selec__talle__nike">
+                    <select class="filtro filtro--carrito" name="numero-calzado" id="numero-calzado">
+                        <option value="1" disabled>S</option>
+                        <option value="2">M</option>
+                        <option value="3" disabled>L</option>
+                        <option value="4" disabled>XL</option>
+                    </select>
+                    <button class="btn btn--carrito" type="submit">Agregar al carrito</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+
+    </main>
+
+    
+   
+
+   <footer>
+       <div class="footer__preg__compra">
+           <h3>¿Porque comprar en SneakerCop?</h3>
+           <ul>
+               <li>Envíos a todo el país</li>
+               <li>Sitio seguro</li>
+               <li>Garantía de calidad</li>
+               <li>Variedad de productos</li>
+           </ul>
+       </div>
+
+       <div class="footer__met__pagos">
+           <h3>Metodos de pago</h3><!---metodos pago-->
+           <img src="../pics/metodos-de-pago.png" alt="metodo de pago">
+        </div>
+
+        <div class="footer__logos"><!--link redes-->
+            <div class="footer__logos__sc"> 
+                <img  src="../pics/logoo-removebg-preview.png" alt="logo SneakerCop"><!---logo--> 
+            </div>    
+            
+            <div class="footer__logos__redes">
+                <ul>
+                    <li><a href="#"><img src="../pics/instagram.png" alt="logo Instagram"></a></li>
+                    <li><a href="#"><img src="../pics/facebook.png" alt="logo Facebook"></a></li>
+                    <li><a href="#"><img src="../pics/twitetr.png" alt="logo Twitter"></a></li>
+                    <li><a href="#"><img src="../pics/youtube.png" alt="logo Youtube"></a></li>
+                    
+                </ul>
+            </div>
+
+           <div class="footer__copy">
+             <p>&copy; 2012</p>
+           </div>
+            
+        </div>
+   </footer>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
