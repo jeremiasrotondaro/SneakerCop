@@ -96,8 +96,12 @@
         .titulo__pagina__nike__nav nav{
             display: flex;
             gap: 10px;
-            & a, p{
-                color: rgb(255, 0, 0);
+            & a {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+            }
+            & p{
+                color: red;
             }
             
         }
