@@ -10,6 +10,15 @@
 .titulo__pagina__nike{
     text-align: center;
     margin: 100px auto 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .titulo__pagina__nike__nav nav{
+        display: none;
+        
+    }
     h1{
         font-size: 40px;
         font-family: $fontPrincipal;
@@ -40,7 +49,8 @@
     margin: 50px 10px 150px 10px;
     img{
         &:hover{
-            scale: 1.1;
+            scale: 0.8;
+            transition: 2s;
         }
     }
     .card-body{
@@ -66,6 +76,8 @@
 }
 
 
+
+
 /*Media tablet------------------------------------------------------------------------*/
 @media screen and (min-width: $mediaTablet){
     #carouselNike{
@@ -74,8 +86,25 @@
         }
     }
     .titulo__pagina__nike{
+        text-align: center;
+        margin: 100px auto 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        .titulo__pagina__nike__nav nav{
+            display: flex;
+            gap: 10px;
+            & a, p{
+                color: rgb(255, 0, 0);
+            }
+            
+        }
         h1{
             font-size: 50px;
+            font-family: $fontPrincipal;
+            color: black;
         }
     }
     .filtro__pagina{
@@ -96,8 +125,12 @@
     }
     .titulo__pagina__nike{
         h1{
-            font-size: 40px;
+            font-size: 35px;
         }
+    }
+    .shop-items-nike{
+        max-width: 1200px;
+        margin: 50px auto;
     }
 
 
